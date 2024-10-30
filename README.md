@@ -8,9 +8,9 @@ Run install.bat file.
 # Running
 Fill in TTS_MODEL field with one of these:
 
- 1: tts_models/multilingual/multi-dataset/xtts_v2 (Best quality, you need a good GPU)
- 2: tts_models/multilingual/multi-dataset/xtts_v1.1 (Faster than xtts_v2, but compromises on quality)
- 3: tts_models/multilingual/multi-dataset/your_tts (This runs very fast even with old GPUs, but quality isn't that good)
+1: tts_models/multilingual/multi-dataset/xtts_v2 (Best quality, you need a good GPU)
+2: tts_models/multilingual/multi-dataset/xtts_v1.1 (Faster than xtts_v2, but compromises on quality)
+3: tts_models/multilingual/multi-dataset/your_tts (This runs very fast even with old GPUs, but quality isn't that good)
 
 Run app.bat file.
 
