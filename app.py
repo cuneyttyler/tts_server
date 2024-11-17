@@ -36,12 +36,7 @@ def load_model():
 load_dotenv()
 tts = load_model()
 
-if getattr(sys, 'frozen', False):
-    template_folder = os.path.join(sys._MEIPASS, 'templates')
-    static_folder = os.path.join(sys._MEIPASS, 'static')
-    app = Flask(__name__, template_folder=template_folder, static_folder=static_folder)
-else:
-    app = Flask(__name__)
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -51,10 +46,10 @@ def index():
 def say_hello():
     return 'Hello from Server'
 
-@app.route('/generate', methods=['POST'])
+@app.route('/tts_to_audio/', methods=['POST'])
 def generate():
     text = request.json['text']
-    speaker = request.json['speaker']
+    speaker = request.json['speaker_wav']
 
     tts.tts_to_file(text=text, file_path="../output/output.wav", speaker_wav=f"../speakers/{speaker}.wav", language="en")
 

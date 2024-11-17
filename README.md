@@ -1,6 +1,6 @@
 # Installation
 
-* You need python 3.10 to run this app. Please download and install it via official python web site.
+* You need anaconda to run this app. Please download and install it via official anaconda web site. You can use miniconda version instead.
 * You also need Nvidia Geforce Graphics card in order to run this with app with GPU support (which is pretty faster than cpu)
 
 Run install.bat file.
