@@ -1,1 +1,1 @@
-conda activate torch & cd server & flask run
+venv\Scripts\activate & flask run

@@ -1,4 +1,4 @@
 flask
 python-dotenv
 transformers
-tts==0.22.0
+coqui-tts

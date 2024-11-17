@@ -51,9 +51,9 @@ def generate():
     text = request.json['text']
     speaker = request.json['speaker_wav']
 
-    tts.tts_to_file(text=text, file_path="../output/output.wav", speaker_wav=f"../speakers/{speaker}.wav", language="en")
+    tts.tts_to_file(text=text, file_path="./output/output.wav", speaker_wav=f"./speakers/{speaker}.wav", language="en")
 
-    return send_file("../output/output.wav", as_attachment=True)
+    return send_file("./output/output.wav", as_attachment=True)
 
 if tts and __name__== '__main__':
     app.run()
